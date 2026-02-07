@@ -1,0 +1,90 @@
+// Re e Imperatori di Roma con date di inizio e fine regno
+// Nota: Le sovrapposizioni sono intenzionali per rappresentare:
+// - Co-imperatori (es. Valeriano e Gallieno)
+// - Tetrarchia (Diocleziano e Massimiano)
+// - Divisione dell'Impero (Oriente/Occidente)
+export const romanRulers = [
+  // Re di Roma
+  { name: 'Romolo', startYear: -753, endYear: -715, type: 're', level: 0 },
+  { name: 'Numa Pompilio', startYear: -715, endYear: -674, type: 're', level: 0 },
+  { name: 'Tullo Ostilio', startYear: -674, endYear: -641, type: 're', level: 0 },
+  { name: 'Anco Marzio', startYear: -641, endYear: -616, type: 're', level: 0 },
+  { name: 'Tarquinio Prisco', startYear: -616, endYear: -579, type: 're', level: 0 },
+  { name: 'Servio Tullio', startYear: -578, endYear: -535, type: 're', level: 0 },
+  { name: 'Tarquinio il Superbo', startYear: -535, endYear: -509, type: 're', level: 0 },
+  
+  // Repubblica (periodo senza un singolo sovrano)
+  { name: 'Repubblica', startYear: -509, endYear: -27, type: 'repubblica', level: 0 },
+  
+  // Imperatori
+  { name: 'Augusto', startYear: -27, endYear: 14, type: 'imperatore', level: 0 },
+  { name: 'Tiberio', startYear: 14, endYear: 37, type: 'imperatore', level: 0 },
+  { name: 'Caligola', startYear: 37, endYear: 41, type: 'imperatore', level: 0 },
+  { name: 'Claudio', startYear: 41, endYear: 54, type: 'imperatore', level: 0 },
+  { name: 'Nerone', startYear: 54, endYear: 68, type: 'imperatore', level: 0 },
+  { name: 'Galba', startYear: 68, endYear: 69, type: 'imperatore', level: 0 },
+  { name: 'Otone', startYear: 69, endYear: 69, type: 'imperatore', level: 0 },
+  { name: 'Vitellio', startYear: 69, endYear: 69, type: 'imperatore', level: 0 },
+  { name: 'Vespasiano', startYear: 69, endYear: 79, type: 'imperatore', level: 0 },
+  { name: 'Tito', startYear: 79, endYear: 81, type: 'imperatore', level: 0 },
+  { name: 'Domiziano', startYear: 81, endYear: 96, type: 'imperatore', level: 0 },
+  { name: 'Nerva', startYear: 96, endYear: 98, type: 'imperatore', level: 0 },
+  { name: 'Traiano', startYear: 98, endYear: 117, type: 'imperatore', level: 0 },
+  { name: 'Adriano', startYear: 117, endYear: 138, type: 'imperatore', level: 0 },
+  { name: 'Antonino Pio', startYear: 138, endYear: 161, type: 'imperatore', level: 0 },
+  { name: 'Marco Aurelio', startYear: 161, endYear: 180, type: 'imperatore', level: 0 },
+  { name: 'Commodo', startYear: 180, endYear: 193, type: 'imperatore', level: 0 },
+  { name: 'Pertinace', startYear: 193, endYear: 193, type: 'imperatore', level: 0 },
+  { name: 'Didio Giuliano', startYear: 193, endYear: 193, type: 'imperatore', level: 0 },
+  { name: 'Settimio Severo', startYear: 193, endYear: 211, type: 'imperatore', level: 0 },
+  { name: 'Caracalla', startYear: 211, endYear: 217, type: 'imperatore', level: 0 },
+  { name: 'Macrino', startYear: 217, endYear: 218, type: 'imperatore', level: 0 },
+  { name: 'Eliogabalo', startYear: 218, endYear: 222, type: 'imperatore', level: 0 },
+  { name: 'Alessandro Severo', startYear: 222, endYear: 235, type: 'imperatore', level: 0 },
+  { name: 'Massimino Trace', startYear: 235, endYear: 238, type: 'imperatore', level: 0 },
+  { name: 'Gordiano III', startYear: 238, endYear: 244, type: 'imperatore', level: 0 },
+  { name: 'Filippo l\'Arabo', startYear: 244, endYear: 249, type: 'imperatore', level: 0 },
+  { name: 'Decio', startYear: 249, endYear: 251, type: 'imperatore', level: 0 },
+  { name: 'Treboniano Gallo', startYear: 251, endYear: 253, type: 'imperatore', level: 0 },
+  // Co-imperatori: Valeriano e Gallieno (253-260)
+  { name: 'Valeriano', startYear: 253, endYear: 260, type: 'imperatore', level: 0 },
+  { name: 'Gallieno', startYear: 253, endYear: 268, type: 'imperatore', level: 1 },
+  { name: 'Claudio il Gotico', startYear: 268, endYear: 270, type: 'imperatore', level: 0 },
+  { name: 'Aureliano', startYear: 270, endYear: 275, type: 'imperatore', level: 0 },
+  { name: 'Tacito', startYear: 275, endYear: 276, type: 'imperatore', level: 0 },
+  { name: 'Probo', startYear: 276, endYear: 282, type: 'imperatore', level: 0 },
+  { name: 'Caro', startYear: 282, endYear: 283, type: 'imperatore', level: 0 },
+  { name: 'Numeriano', startYear: 283, endYear: 284, type: 'imperatore', level: 0 },
+  // Tetrarchia: Diocleziano e Massimiano (285-305)
+  { name: 'Diocleziano', startYear: 284, endYear: 305, type: 'imperatore', level: 0 },
+  { name: 'Massimiano', startYear: 285, endYear: 305, type: 'imperatore', level: 1 },
+  { name: 'Costanzo Cloro', startYear: 305, endYear: 306, type: 'imperatore', level: 0 },
+  { name: 'Galerio', startYear: 305, endYear: 311, type: 'imperatore', level: 1 },
+  { name: 'Costantino I', startYear: 306, endYear: 337, type: 'imperatore', level: 0 },
+  { name: 'Licinio', startYear: 308, endYear: 324, type: 'imperatore', level: 1 },
+  // Co-imperatori: Costantino II, Costanzo II, Costante I (337-350/361)
+  { name: 'Costantino II', startYear: 337, endYear: 340, type: 'imperatore', level: 0 },
+  { name: 'Costanzo II', startYear: 337, endYear: 361, type: 'imperatore', level: 1 },
+  { name: 'Costante I', startYear: 337, endYear: 350, type: 'imperatore', level: 2 },
+  { name: 'Giuliano', startYear: 361, endYear: 363, type: 'imperatore', level: 0 },
+  { name: 'Gioviano', startYear: 363, endYear: 364, type: 'imperatore', level: 0 },
+  // Co-imperatori: Valentiniano I e Valente (364-375/378)
+  { name: 'Valentiniano I', startYear: 364, endYear: 375, type: 'imperatore', level: 0 },
+  { name: 'Valente', startYear: 364, endYear: 378, type: 'imperatore', level: 1 },
+  { name: 'Graziano', startYear: 375, endYear: 383, type: 'imperatore', level: 0 },
+  { name: 'Valentiniano II', startYear: 375, endYear: 392, type: 'imperatore', level: 1 },
+  { name: 'Teodosio I', startYear: 379, endYear: 395, type: 'imperatore', level: 0 },
+  // Divisione Impero: Arcadio (Oriente) e Onorio (Occidente)
+  { name: 'Arcadio', startYear: 395, endYear: 408, type: 'imperatore', level: 0 },
+  { name: 'Onorio', startYear: 395, endYear: 423, type: 'imperatore', level: 1 },
+  { name: 'Teodosio II', startYear: 408, endYear: 450, type: 'imperatore', level: 0 },
+  { name: 'Valentiniano III', startYear: 425, endYear: 455, type: 'imperatore', level: 1 },
+  { name: 'Marciano', startYear: 450, endYear: 457, type: 'imperatore', level: 0 },
+  { name: 'Maggioriano', startYear: 457, endYear: 461, type: 'imperatore', level: 1 },
+  { name: 'Libio Severo', startYear: 461, endYear: 465, type: 'imperatore', level: 1 },
+  { name: 'Antemio', startYear: 467, endYear: 472, type: 'imperatore', level: 1 },
+  { name: 'Olibrio', startYear: 472, endYear: 472, type: 'imperatore', level: 1 },
+  { name: 'Glicerio', startYear: 473, endYear: 474, type: 'imperatore', level: 1 },
+  { name: 'Giulio Nepote', startYear: 474, endYear: 480, type: 'imperatore', level: 1 },
+  { name: 'Romolo Augusto', startYear: 475, endYear: 476, type: 'imperatore', level: 1 },
+];
